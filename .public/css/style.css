@@ -12,12 +12,12 @@ html {
 
 body {
   box-sizing: border-box;
-  background: #001534;
+  background: #ff79da;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #15DEA5;
+  color: #9356dc;
   font-size: 2rem;
   font-weight: 100;
   line-height: 1.7;
@@ -45,14 +45,14 @@ button {
 
 .btn {
   padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
-  background: #001534;
+  border: 0.1rem solid #9356dc;
+  color: #9356dc;
+  background: #ff79da;
   cursor: pointer;
 }
 .btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
+  background: #9356dc;
+  color: #99e2d0;
 }
 .btn--full-width {
   width: 100%;
@@ -60,7 +60,7 @@ button {
 }
 
 .header {
-  background: #15DEA5;
+  background: #9356dc;
   height: 10rem;
   display: flex;
   align-items: center;
@@ -69,7 +69,7 @@ button {
 }
 .header__logo {
   font-size: 7rem;
-  color: #001534;
+  color: #ff79da;
   margin-left: 10rem;
   text-shadow: 0.55rem 0.55rem #fff;
 }
@@ -86,14 +86,14 @@ button {
 }
 .nav__link a {
   text-decoration: none;
-  color: #D6FFF5;
+  color: #99e2d0;
 }
 .nav__link--active {
-  color: #001534;
+  color: #ff79da;
 }
 .nav__link--active:hover {
   cursor: default;
-  color: #001534;
+  color: #ff79da;
 }
 .nav__link a:hover {
   color: #fff;
@@ -102,7 +102,7 @@ button {
 .container {
   margin: 6rem;
   padding: 1.5rem 1.5rem 0 1.5rem;
-  border: 0.1rem solid #D6FFF5;
+  border: 0.1rem solid #99e2d0;
 }
 
 .form {
@@ -112,13 +112,13 @@ button {
 .form__heading {
   width: 100%;
   color: #fff;
-  text-shadow: 0.55rem 0.55rem #11af82;
-  background: #15DEA5;
+  text-shadow: 0.55rem 0.55rem #782cd3;
+  background: #9356dc;
   line-height: 5rem;
   padding: 1.5rem;
 }
 .form__field label {
-  color: #D6FFF5;
+  color: #99e2d0;
   display: block;
   font-size: 2rem;
   line-height: 2rem;
@@ -126,22 +126,22 @@ button {
 }
 .form__field input {
   width: 100%;
-  background: #001534;
-  border: 0.1rem solid #15DEA5;
+  background: #ff79da;
+  border: 0.1rem solid #9356dc;
   padding: 1.5rem;
-  color: #D6FFF5;
+  color: #99e2d0;
   font-weight: 900;
   font-style: italic;
   font-size: 2.75rem;
-  border: 0.1rem solid #15DEA5;
-  background-color: #001534;
-  color: #15DEA5;
+  border: 0.1rem solid #9356dc;
+  background-color: #ff79da;
+  color: #9356dc;
 }
 .form__field textarea {
   width: 100%;
-  color: #15DEA5;
-  background: #001534;
-  border: 0.1rem solid #15DEA5;
+  color: #9356dc;
+  background: #ff79da;
+  border: 0.1rem solid #9356dc;
   outline: none;
   padding: 1.5rem;
   margin-bottom: 0.75rem;
@@ -152,11 +152,11 @@ button {
   font-size: 6rem;
   font-weight: 900;
   font-style: italic;
-  color: #D6FFF5;
+  color: #99e2d0;
   margin: 2rem 6rem -3rem 6rem;
 }
 .quote strong {
-  color: #15DEA5;
+  color: #9356dc;
 }
 
 .proj-grid {
@@ -199,7 +199,7 @@ button {
   cursor: pointer;
 }
 .proj-prev:hover > .proj-prev__heading {
-  background: #15DEA5;
+  background: #9356dc;
 }
 .proj-prev:hover > .proj-prev__image {
   opacity: 1;
@@ -217,7 +217,7 @@ button {
 .about__heading {
   grid-area: heading;
   color: #fff;
-  text-shadow: 0.55rem 0.55rem #11af82;
+  text-shadow: 0.55rem 0.55rem #782cd3;
   text-align: right;
   padding-right: 1.5rem;
 }
@@ -228,7 +228,7 @@ button {
   overflow: hidden;
   width: 80%;
   border-radius: 1000rem;
-  border: 1.5rem solid #15DEA5;
+  border: 1.5rem solid #9356dc;
 }
 .about__pic img {
   display: block;
@@ -243,15 +243,15 @@ button {
 }
 .about__btn {
   padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
-  background: #001534;
+  border: 0.1rem solid #9356dc;
+  color: #9356dc;
+  background: #ff79da;
   cursor: pointer;
   grid-area: btn;
 }
 .about__btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
+  background: #9356dc;
+  color: #99e2d0;
 }
 .about__btn--full-width {
   width: 100%;
@@ -291,7 +291,7 @@ button {
 }
 .project__synopsis h1 {
   color: #fff;
-  text-shadow: 0.55rem 0.55rem #11af82;
+  text-shadow: 0.55rem 0.55rem #782cd3;
 }
 .project__synopsis p {
   line-height: 2.5rem;
@@ -303,21 +303,21 @@ button {
   color: #fff;
 }
 .project__tags p strong {
-  color: #15DEA5;
+  color: #9356dc;
   font-weight: 900;
   font-style: italic;
 }
 .project__btn {
   padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
-  background: #001534;
+  border: 0.1rem solid #9356dc;
+  color: #9356dc;
+  background: #ff79da;
   cursor: pointer;
   grid-area: btn;
 }
 .project__btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
+  background: #9356dc;
+  color: #99e2d0;
 }
 .project__btn--full-width {
   width: 100%;
