@@ -1,5 +1,15 @@
-.container {
-  margin: $layout-margin;
-  padding: $grid-gutter $grid-gutter 0 $grid-gutter;
-  @include border($colour-primary);
+// .container {
+//   margin: $layout-margin;
+//   padding: $grid-gutter $grid-gutter 0 $grid-gutter;
+//   @include border($colour-primary);
+// }
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
