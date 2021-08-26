@@ -1,21 +1,21 @@
 {
-  "name": "writing-sass",
+  "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "Joe Blow's portfolio",
+  "description": "Project 3 | Oh my food restaurant",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:public/css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    "url": "git+https://github.com/shinboram-90/third_project.git"
   },
   "author": "gerkx",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
+    "url": "https://github.com/shinboram-90/third_project/issues"
   },
-  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme",
+  "homepage": "https://github.com/shinboram-90/third_project#readme",
   "keywords": [
     "sass",
     "openclassrooms",

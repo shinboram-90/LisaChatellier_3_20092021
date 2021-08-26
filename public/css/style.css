@@ -1,3 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #101010;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Shrikhand", cursive;
+}
+
 .loader {
   position: fixed;
   width: 100%;
@@ -9,7 +39,29 @@
 }
 
 footer {
-  background-color: red;
+  background-color: #353535;
+  color: #fff;
+  padding: 1rem;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .fas {
+  font-size: 0.8rem;
+}
+
+.underline {
+  background: #99e2d0;
+  height: 3px;
+  width: 10%;
+}
+
+img {
+  height: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

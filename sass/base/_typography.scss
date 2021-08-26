@@ -1,17 +1,26 @@
-// body {
-//   font-family: "Roboto", sans-serif;
-//   color: $colour-primary;
-//   font-size: 2rem;
-//   font-weight: 100;
-//   line-height: 1.7;
-// }
+body {
+  font-family: "Roboto", sans-serif;
+  color: #101010;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
 
-// h1 {
-//   font-family: "Shrikhand", cursive;
-//   // font-weight: 900;
-//   font-size: 5rem;
-//   // font-style: italic;
-// }
+h1 {
+  font-family: "Shrikhand", cursive;
+
+  font-size: 5rem;
+  // font-style: italic;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Shrikhand", cursive;
+}
 
 // textarea {
 //   font-family: "Roboto", sans-serif;
