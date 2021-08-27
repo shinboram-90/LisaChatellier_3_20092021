@@ -12,3 +12,39 @@
 //         @include heading-shadow($colour-white);
 //     }
 // }
+
+.header {
+  text-align: center;
+  &__nav {
+    padding: 1rem 0 0.7rem 0;
+  }
+  &__location {
+    background: #eaeaea;
+    padding: 1rem;
+    &--box {
+      width: 50%;
+      margin: 0 auto;
+      position: relative;
+      .header__location--icon {
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      & span {
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: #464646;
+      }
+    }
+  }
+  &__content {
+    background-color: #f6f6f6;
+    padding: 2rem 1.7rem;
+    h2,
+    p {
+      line-height: normal;
+      padding-bottom: 1rem;
+    }
+  }
+}

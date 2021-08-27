@@ -7,6 +7,15 @@
 }
 
 body {
+  box-sizing: border-box;
+  background: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   color: #101010;
   font-size: 1rem;
@@ -16,16 +25,68 @@ body {
 
 h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  font-size: 1.7rem;
 }
 
 h3 {
   font-family: "Shrikhand", cursive;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+.btn {
+  padding: 1rem 1.3rem;
+  border-radius: 50px;
+  color: white;
+  font: 500 1.1rem "roboto";
+  background: linear-gradient(#ff79da, #9356dc);
+  border: none;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.header {
+  text-align: center;
+}
+.header__nav {
+  padding: 1rem 0 0.7rem 0;
+}
+.header__location {
+  background: #eaeaea;
+  padding: 1rem;
+}
+.header__location--box {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+.header__location--box .header__location--icon {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__location--box span {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #464646;
+}
+.header__content {
+  background-color: #f6f6f6;
+  padding: 2rem 1.7rem;
+}
+.header__content h2,
+.header__content p {
+  line-height: normal;
+  padding-bottom: 1rem;
 }
 
 .underline {
@@ -78,10 +139,6 @@ footer h3 {
 .footer__content--grid--text {
   grid-area: text;
   align-self: start;
-}
-
-li {
-  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
