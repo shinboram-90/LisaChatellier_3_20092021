@@ -1,27 +1,40 @@
 footer {
   background-color: $colour-dark;
   color: $colour-white;
-  padding: 1rem;
+  padding: 1.9rem 2rem;
 
-  & ul {
-    list-style: none;
-  }
-
-  & a {
+  .link {
     text-decoration: none;
     color: $colour-white;
+    cursor: pointer;
   }
-  & .fas {
-    font-size: 0.8rem;
+
+  .fas {
+    font-size: 0.9rem;
+  }
+  h3 {
+    padding-bottom: 1rem;
   }
 }
 
-.underline {
-  background: $colour-tertiary;
-  height: 3px;
-  width: 10%;
+.footer__content--grid {
+  display: grid;
+  width: fit-content;
+  grid-template-areas:
+    "icon text"
+    "icon text";
+  grid-template-columns: 1rem;
+  column-gap: 0.5rem;
+
+  &--icon {
+    grid-area: icon;
+  }
+  &--text {
+    grid-area: text;
+    align-self: start;
+  }
 }
 
-img {
-  height: 200px;
+li {
+  list-style: none;
 }

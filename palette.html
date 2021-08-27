@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,900i"
       rel="stylesheet"
     />
@@ -12,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
     <title>Oh my food | La palette du goût</title>
   </head>
   <body>
@@ -129,21 +133,29 @@
     </main>
 
     <footer>
-      <div class="logo">
-        <img src="public/img/logo/ohmyfood@2x.svg" alt="" />
+      <div class="footer__logo">
+        <h3>ohmyfood</h3>
       </div>
-      <div class="footer-content">
-        <a href="#">
-          <span><i class="fas fa-utensils"></i></span>
-          <p>Proposer un restaurant</p></a
-        >
-        <a href="#">
-          <span><i class="fas fa-hands-helping"></i> </span>
-          <p>Devenir partenaire</p>
-        </a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
-      </div>
+      <ul class="footer__content">
+        <li>
+          <a class="footer__content--grid link" href="#">
+            <span class="footer__content--icon">
+              <i class="fas fa-utensils"></i>
+            </span>
+            <span class="footer__content--text">Proposer un restaurant</span>
+          </a>
+        </li>
+        <li>
+          <a class="footer__content--grid link" href="#">
+            <span class="footer__content--icon">
+              <i class="fas fa-hands-helping"></i>
+            </span>
+            <span class="footer__content--text"> Devenir partenaire</span>
+          </a>
+        </li>
+        <li><a class="link" href="#">Mentions légales</a></li>
+        <li><a class="link" href="#">Contact</a></li>
+      </ul>
     </footer>
   </body>
 </html>

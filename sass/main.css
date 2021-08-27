@@ -28,16 +28,6 @@ h3 {
   font-family: "Shrikhand", cursive;
 }
 
-.underline {
-  background: #99e2d0;
-  height: 3px;
-  width: 10%;
-}
-
-img {
-  height: 200px;
-}
-
 .loader {
   position: fixed;
   width: 100%;
@@ -51,37 +41,30 @@ img {
 footer {
   background-color: #353535;
   color: #fff;
-  padding: 1.9rem 2rem;
+  padding: 1rem;
 }
-footer .link {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-}
-footer .fas {
-  font-size: 0.9rem;
-}
-footer h3 {
-  padding-bottom: 1rem;
-}
-
-.footer__content--grid {
-  display: grid;
-  width: fit-content;
-  grid-template-areas: "icon text" "icon text";
-  grid-template-columns: 1rem;
-  column-gap: 0.5rem;
-}
-.footer__content--grid--icon {
-  grid-area: icon;
-}
-.footer__content--grid--text {
-  grid-area: text;
-  align-self: start;
-}
-
-li {
+footer ul {
   list-style: none;
 }
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .fas {
+  font-size: 0.8rem;
+}
 
-/*# sourceMappingURL=style.css.map */
+.underline {
+  background: #99e2d0;
+  height: 3px;
+  width: 10%;
+}
+
+img {
+  height: 200px;
+}
+
+.footer__icon {
+  width: 70px;
+  background-color: aqua;
+}/*# sourceMappingURL=main.css.map */
