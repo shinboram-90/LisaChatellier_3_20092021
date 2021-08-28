@@ -58,6 +58,10 @@ p {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;
 }
+.btn:hover {
+  background: linear-gradient(#ff93f4, #ad70f6);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 8px 10px;
+}
 
 .header {
   text-align: center;
@@ -106,6 +110,7 @@ p {
 .procedure__box {
   display: flex;
   flex-direction: column;
+  padding: 1rem 0;
 }
 .procedure__box--card {
   background-color: #f6f6f6;
@@ -148,6 +153,7 @@ p {
   line-height: 1.58rem;
   text-align: center;
   color: #fff;
+  font-weight: 500;
 }
 
 .underline {

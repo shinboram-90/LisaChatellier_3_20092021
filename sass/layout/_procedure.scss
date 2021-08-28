@@ -4,6 +4,7 @@
   &__box {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0;
     &--card {
       background-color: #f6f6f6;
       display: flex;
@@ -48,6 +49,7 @@
   line-height: 1.58rem;
   text-align: center;
   color: $colour-white;
+  font-weight: 500;
 }
 
 .underline {
