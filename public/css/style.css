@@ -43,6 +43,10 @@ h3 {
   font-family: "Shrikhand", cursive;
 }
 
+h4 {
+  margin: 0;
+}
+
 p {
   font-size: 1rem;
 }
@@ -176,7 +180,25 @@ img {
 }
 .restaurant__grid--card {
   background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 15px;
+}
+.restaurant__grid--card:last-child {
   margin-bottom: 1rem;
+}
+
+.img-position {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  object-position: bottom;
+}
+
+.portrait-format {
+  object-position: 50% 60%;
 }
 
 .loader {
@@ -187,6 +209,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.restaurant__grid--card--content {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.fa-heart {
+  position: absolute;
 }
 
 footer {
