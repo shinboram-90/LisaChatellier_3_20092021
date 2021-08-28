@@ -17,9 +17,10 @@
   text-align: center;
   &__nav {
     padding: 1rem 0 0.7rem 0;
+    background: $colour-white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 1px 10px;
   }
   &__location {
-    background: #eaeaea;
     padding: 1rem;
     &--box {
       width: 50%;

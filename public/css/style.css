@@ -8,7 +8,7 @@
 
 body {
   box-sizing: border-box;
-  background: #fff;
+  background: #eaeaea;
 }
 
 li {
@@ -51,6 +51,7 @@ p {
   border: none;
   margin: 1rem;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
 }
 
 .header {
@@ -58,9 +59,10 @@ p {
 }
 .header__nav {
   padding: 1rem 0 0.7rem 0;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 1px 10px;
 }
 .header__location {
-  background: #eaeaea;
   padding: 1rem;
 }
 .header__location--box {
