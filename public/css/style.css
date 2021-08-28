@@ -166,6 +166,19 @@ img {
   height: 200px;
 }
 
+.restaurant {
+  padding: 3rem 1.5rem 3.5rem 1.5rem;
+}
+.restaurant__grid {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+.restaurant__grid--card {
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
 .loader {
   position: fixed;
   width: 100%;
