@@ -15,6 +15,11 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #101010;
@@ -115,7 +120,6 @@ p {
 }
 .procedure__box--card:hover {
   background-color: #f5edff;
-  cursor: pointer;
 }
 .procedure__box--card:hover .procedure__box--card-icon {
   color: #9356dc;
@@ -174,7 +178,6 @@ footer {
 footer .link {
   text-decoration: none;
   color: #fff;
-  cursor: pointer;
 }
 footer .fas {
   font-size: 0.9rem;
