@@ -8,8 +8,16 @@
   margin: 1rem;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px;
+
   &:hover {
     background: linear-gradient(#ff93f4, #ad70f6);
     box-shadow: rgba(0, 0, 0, 0.3) 0 8px 10px;
+  }
+}
+
+.btn__box {
+  text-align: center;
+  &--order {
+    padding: 1rem 3rem;
   }
 }

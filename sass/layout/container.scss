@@ -9,10 +9,10 @@
 .underline {
   background: $colour-tertiary;
   height: 3px;
-  width: 45px;
+  width: 40px;
 }
 
-.entree__grid {
+.menu__grid {
   // display: flex;
   // flex-direction: column;
   padding: 1rem 0;
@@ -20,16 +20,21 @@
     background-color: $colour-white;
     margin-bottom: 1rem;
     border-radius: 15px;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.5rem 0.7rem 1rem;
     & > p {
-      font-weight: bold;
-      font-size: 1.2rem;
+      font-weight: 500;
+      font-size: 1.15rem;
     }
     &--description {
       display: flex;
       justify-content: space-between;
+      line-height: 1.3rem;
+      & > p {
+        font-size: 0.95rem;
+      }
       & span {
         font-weight: bold;
+        font-size: 0.95rem;
       }
     }
   }

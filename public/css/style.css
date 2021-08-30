@@ -56,7 +56,7 @@ h4 {
 
 h5 {
   padding-top: 1.6rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -78,6 +78,13 @@ p {
 .btn:hover {
   background: linear-gradient(#ff93f4, #ad70f6);
   box-shadow: rgba(0, 0, 0, 0.3) 0 8px 10px;
+}
+
+.btn__box {
+  text-align: center;
+}
+.btn__box--order {
+  padding: 1rem 3rem;
 }
 
 .header {
@@ -283,35 +290,40 @@ p {
   margin-top: -60px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding: 2rem 1.5rem 3.5rem 1.5rem;
+  padding: 2rem 1rem 3.5rem 1rem;
   background-color: #f6f6f6;
 }
 
 .underline {
   background: #99e2d0;
   height: 3px;
-  width: 45px;
+  width: 40px;
 }
 
-.entree__grid {
+.menu__grid {
   padding: 1rem 0;
 }
-.entree__grid--card {
+.menu__grid--card {
   background-color: #fff;
   margin-bottom: 1rem;
   border-radius: 15px;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.5rem 0.7rem 1rem;
 }
-.entree__grid--card > p {
-  font-weight: bold;
-  font-size: 1.2rem;
+.menu__grid--card > p {
+  font-weight: 500;
+  font-size: 1.15rem;
 }
-.entree__grid--card--description {
+.menu__grid--card--description {
   display: flex;
   justify-content: space-between;
+  line-height: 1.3rem;
 }
-.entree__grid--card--description span {
+.menu__grid--card--description > p {
+  font-size: 0.95rem;
+}
+.menu__grid--card--description span {
   font-weight: bold;
+  font-size: 0.95rem;
 }
 
 footer {
