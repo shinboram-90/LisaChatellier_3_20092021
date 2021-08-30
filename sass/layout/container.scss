@@ -4,6 +4,9 @@
   border-top-right-radius: 30px;
   padding: $padding-container;
   background-color: #f6f6f6;
+  &__title {
+    padding-right: 1rem;
+  }
 }
 
 .underline {
@@ -13,14 +16,14 @@
 }
 
 .menu__grid {
-  // display: flex;
-  // flex-direction: column;
   padding: 1rem 0;
   &--card {
     background-color: $colour-white;
     margin-bottom: 1rem;
     border-radius: 15px;
     padding: 0.6rem 1.5rem 0.7rem 1rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 10px;
     & > p {
       font-weight: 500;
       font-size: 1.15rem;
@@ -38,4 +41,22 @@
       }
     }
   }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: $colour-tertiary;
+  color: $colour-white;
+  display: none;
+  height: 100.5%;
+  top: 50%;
+  right: -30.5px;
+  width: 3.8rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 1.35rem;
+  transform: translate(-50%, -50%);
 }

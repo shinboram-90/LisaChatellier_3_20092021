@@ -81,6 +81,7 @@ p {
 }
 
 .btn__box {
+  margin-top: 0.5rem;
   text-align: center;
 }
 .btn__box--order {
@@ -290,8 +291,11 @@ p {
   margin-top: -60px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding: 2rem 1rem 3.5rem 1rem;
+  padding: 2rem 1rem 4.2rem 1rem;
   background-color: #f6f6f6;
+}
+.container__title {
+  padding-right: 1rem;
 }
 
 .underline {
@@ -308,6 +312,8 @@ p {
   margin-bottom: 1rem;
   border-radius: 15px;
   padding: 0.6rem 1.5rem 0.7rem 1rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 10px;
 }
 .menu__grid--card > p {
   font-weight: 500;
@@ -326,6 +332,24 @@ p {
   font-size: 0.95rem;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #fff;
+  display: none;
+  height: 100.5%;
+  top: 50%;
+  right: -30.5px;
+  width: 3.8rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 1.35rem;
+  transform: translate(-50%, -50%);
+}
+
 footer {
   background-color: #353535;
   color: #fff;
@@ -340,7 +364,7 @@ footer .fas {
   font-size: 0.9rem;
 }
 footer .footer__title {
-  padding-bottom: 1rem;
+  padding-bottom: 0.95rem;
   font-size: 1.17rem;
 }
 
