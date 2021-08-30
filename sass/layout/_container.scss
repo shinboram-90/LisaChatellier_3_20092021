@@ -8,9 +8,26 @@
     padding-top: 1rem;
     &--card {
       background-color: $colour-white;
+      border-radius: 20px;
+      margin-bottom: 1.5rem;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 3px 15px;
+    }
+    &--card:last-child {
       margin-bottom: 1rem;
     }
   }
+}
+
+.img-position {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  object-position: bottom;
+}
+.portrait-format {
+  object-position: 50% 60%;
 }
 
 .loader {
@@ -21,4 +38,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.restaurant__grid--card--content {
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.fa-heart {
+  position: absolute;
 }
