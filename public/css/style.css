@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+a:visited {
+  color: black;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -197,6 +200,18 @@ img {
   border-radius: 20px;
   margin-bottom: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0 3px 15px;
+  position: relative;
+}
+.restaurant__grid--card .new-restaurant {
+  position: absolute;
+  right: 1.1rem;
+  top: 1.1rem;
+  padding: 0.2rem 1rem;
+  background: #99e2d0;
+  color: #0a8d6d;
+  font-weight: 500;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 3px 10px;
 }
 .restaurant__grid--card:last-child {
   margin-bottom: 1rem;
@@ -239,11 +254,10 @@ img {
   top: 50%;
   font-size: 1.5rem;
 }
-
-.filled-heart {
+.restaurant__grid--card--content .heart-animation .filled-heart {
   color: transparent;
 }
-.filled-heart:hover {
+.restaurant__grid--card--content .heart-animation .filled-heart:hover {
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   background-clip: text;
