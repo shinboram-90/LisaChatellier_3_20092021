@@ -6,6 +6,12 @@
   background-color: #f6f6f6;
 }
 
+.underline {
+  background: $colour-tertiary;
+  height: 3px;
+  width: 45px;
+}
+
 .entree__grid {
   // display: flex;
   // flex-direction: column;
@@ -17,6 +23,14 @@
     padding: 0.5rem 1rem;
     & > p {
       font-weight: bold;
+      font-size: 1.2rem;
+    }
+    &--description {
+      display: flex;
+      justify-content: space-between;
+      & span {
+        font-weight: bold;
+      }
     }
   }
 }

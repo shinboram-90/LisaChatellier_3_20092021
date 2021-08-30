@@ -189,16 +189,6 @@ p {
   font-weight: 400;
 }
 
-.underline {
-  background: #99e2d0;
-  height: 3px;
-  width: 10%;
-}
-
-img {
-  height: 200px;
-}
-
 .loader {
   position: fixed;
   width: 100%;
@@ -297,6 +287,12 @@ img {
   background-color: #f6f6f6;
 }
 
+.underline {
+  background: #99e2d0;
+  height: 3px;
+  width: 45px;
+}
+
 .entree__grid {
   padding: 1rem 0;
 }
@@ -307,6 +303,14 @@ img {
   padding: 0.5rem 1rem;
 }
 .entree__grid--card > p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.entree__grid--card--description {
+  display: flex;
+  justify-content: space-between;
+}
+.entree__grid--card--description span {
   font-weight: bold;
 }
 
