@@ -31,24 +31,27 @@ body {
 h1 {
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
+  font-weight: normal;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.68rem;
 }
 
 h3 {
   font-family: "Shrikhand", cursive;
+  font-weight: normal;
 }
 
 h4 {
   margin: 0;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .btn {
@@ -71,17 +74,19 @@ p {
   text-align: center;
 }
 .header__nav {
-  padding: 1rem 0 0.7rem 0;
+  padding: 0.5rem 0 0.2rem 0;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0 1px 10px;
 }
 .header__location {
-  padding: 1rem;
+  padding: 0.8rem;
+  color: #464646;
 }
 .header__location--box {
   width: 50%;
   margin: 0 auto;
   position: relative;
+  font-size: 1.1rem;
 }
 .header__location--box .header__location--icon {
   left: 0;
@@ -91,12 +96,11 @@ p {
 }
 .header__location--box span {
   font-weight: 500;
-  font-size: 1.2rem;
-  color: #464646;
+  font-size: 1.1rem;
 }
 .header__content {
   background-color: #f6f6f6;
-  padding: 2rem 1.7rem;
+  padding: 2.5rem 1.7rem;
 }
 .header__content h2,
 .header__content p {
@@ -122,7 +126,7 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 0.7rem;
+  margin: 0.7rem 0 0.7rem 0.8rem;
   padding: 1.5rem 2rem;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 15px;
@@ -149,7 +153,7 @@ p {
 
 .rounded-number {
   position: absolute;
-  left: -0.7rem;
+  left: -0.8rem;
   background-color: #9356dc;
   border-radius: 50%;
   height: 1.5rem;
@@ -157,7 +161,7 @@ p {
   line-height: 1.58rem;
   text-align: center;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .underline {
@@ -168,6 +172,16 @@ p {
 
 img {
   height: 200px;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .restaurant {
@@ -188,35 +202,32 @@ img {
   margin-bottom: 1rem;
 }
 
-.img-position {
+.img-restaurant {
   height: 180px;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
   border-radius: 20px 20px 0 0;
   object-position: bottom;
+  display: block;
 }
 
 .portrait-format {
   object-position: 50% 60%;
 }
 
-.loader {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .restaurant__grid--card--content {
-  padding: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0.9rem 1rem;
+  position: relative;
+  line-height: 1.7rem;
 }
 
 .fa-heart {
   position: absolute;
+  font-size: 1.5rem;
+  transform: translate(-50%, 50%);
+  bottom: 50%;
+  right: 0.5rem;
 }
 
 footer {
@@ -233,6 +244,9 @@ footer .fas {
 }
 footer h3 {
   padding-bottom: 1rem;
+}
+footer li {
+  font-weight: 400;
 }
 
 .footer__content--grid {
