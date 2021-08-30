@@ -6,6 +6,7 @@ footer {
   .link {
     text-decoration: none;
     color: $colour-white;
+    font-weight: 400;
   }
 
   .fas {
@@ -13,10 +14,6 @@ footer {
   }
   h3 {
     padding-bottom: 1rem;
-  }
-
-  li {
-    font-weight: 400;
   }
 }
 

@@ -238,15 +238,13 @@ footer {
 footer .link {
   text-decoration: none;
   color: #fff;
+  font-weight: 400;
 }
 footer .fas {
   font-size: 0.9rem;
 }
 footer h3 {
   padding-bottom: 1rem;
-}
-footer li {
-  font-weight: 400;
 }
 
 .footer__content--grid {
