@@ -1,0 +1,22 @@
+.container {
+  margin-top: -60px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: $padding-container;
+  background-color: #f6f6f6;
+}
+
+.entree__grid {
+  // display: flex;
+  // flex-direction: column;
+  padding: 1rem 0;
+  &--card {
+    background-color: $colour-white;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    & > p {
+      font-weight: bold;
+    }
+  }
+}

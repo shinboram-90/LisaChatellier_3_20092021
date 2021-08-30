@@ -46,11 +46,18 @@ h2 {
 h3 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
+  font-size: 1.7rem;
 }
 
 h4 {
   margin: 0;
   font-size: 1.2rem;
+}
+
+h5 {
+  padding-top: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 p {
@@ -120,6 +127,13 @@ p {
 }
 .header__content--p {
   font-size: 1.15rem;
+}
+
+.background-img {
+  height: 275px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 .procedure {
@@ -239,8 +253,11 @@ img {
   object-position: 50% 60%;
 }
 
-.restaurant__grid--card--content {
+.accueil-content {
   padding: 0.9rem 1.5rem 0.9rem 1rem;
+}
+
+.restaurant__grid--card--content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -272,6 +289,27 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+.container {
+  margin-top: -60px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 2rem 1.5rem 3.5rem 1.5rem;
+  background-color: #f6f6f6;
+}
+
+.entree__grid {
+  padding: 1rem 0;
+}
+.entree__grid--card {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+.entree__grid--card > p {
+  font-weight: bold;
+}
+
 footer {
   background-color: #353535;
   color: #fff;
@@ -285,8 +323,9 @@ footer .link {
 footer .fas {
   font-size: 0.9rem;
 }
-footer h3 {
+footer .footer__title {
   padding-bottom: 1rem;
+  font-size: 1.17rem;
 }
 
 .footer__content--grid {

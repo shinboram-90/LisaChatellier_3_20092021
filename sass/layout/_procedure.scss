@@ -1,6 +1,6 @@
 .procedure {
   background: $colour-white;
-  padding: 3rem 1.5rem 3.5rem 1.5rem;
+  padding: $padding-section;
   &__box {
     display: flex;
     flex-direction: column;
