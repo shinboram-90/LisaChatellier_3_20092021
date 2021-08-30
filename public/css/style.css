@@ -217,17 +217,37 @@ img {
 }
 
 .restaurant__grid--card--content {
-  padding: 0.9rem 1rem;
-  position: relative;
+  padding: 0.9rem 1.5rem 0.9rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   line-height: 1.7rem;
 }
-
-.fa-heart {
+.restaurant__grid--card--content .heart-animation {
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+.restaurant__grid--card--content .heart-animation:hover {
+  color: transparent;
+}
+.restaurant__grid--card--content .heart-animation .empty-heart,
+.restaurant__grid--card--content .heart-animation .filled-heart {
   position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
   font-size: 1.5rem;
-  transform: translate(-50%, 50%);
-  bottom: 50%;
-  right: 0.5rem;
+}
+
+.filled-heart {
+  color: transparent;
+}
+.filled-heart:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
