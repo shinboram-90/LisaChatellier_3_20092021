@@ -1,16 +1,18 @@
 .header {
   text-align: center;
   &__nav {
-    padding: 1rem 0 0.7rem 0;
+    padding: 0.5rem 0 0.2rem 0;
     background: $colour-white;
     box-shadow: rgba(0, 0, 0, 0.25) 0 1px 10px;
   }
   &__location {
-    padding: 1rem;
+    padding: 0.8rem;
+    color: #464646;
     &--box {
       width: 50%;
       margin: 0 auto;
       position: relative;
+      font-size: 1.1rem;
       .header__location--icon {
         left: 0;
         position: absolute;
@@ -19,14 +21,13 @@
       }
       & span {
         font-weight: 500;
-        font-size: 1.2rem;
-        color: #464646;
+        font-size: 1.1rem;
       }
     }
   }
   &__content {
     background-color: #f6f6f6;
-    padding: 2rem 1.7rem;
+    padding: 2.5rem 1.7rem;
     h2,
     p {
       line-height: normal;
