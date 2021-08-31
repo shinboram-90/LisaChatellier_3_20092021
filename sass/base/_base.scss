@@ -23,7 +23,9 @@ li {
 a {
   text-decoration: none;
   cursor: pointer;
-  &:visited {
+  &:visited,
+  &:link,
+  &:active {
     color: black;
   }
 }
