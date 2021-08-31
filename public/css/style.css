@@ -315,6 +315,12 @@ p {
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 10px;
 }
+.menu__grid--card p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 1rem;
+}
 .menu__grid--card > p {
   font-weight: 500;
   font-size: 1.15rem;
@@ -333,7 +339,6 @@ p {
 }
 
 .wrapper {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -348,6 +353,10 @@ p {
   border-bottom-right-radius: 15px;
   font-size: 1.35rem;
   transform: translate(-50%, -50%);
+}
+
+.menu__grid--card:hover .wrapper {
+  display: flex;
 }
 
 footer {

@@ -24,6 +24,12 @@
     padding: 0.6rem 1.5rem 0.7rem 1rem;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 10px;
+    & p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-right: 1rem;
+    }
     & > p {
       font-weight: 500;
       font-size: 1.15rem;
@@ -44,7 +50,7 @@
 }
 
 .wrapper {
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -59,4 +65,11 @@
   border-bottom-right-radius: 15px;
   font-size: 1.35rem;
   transform: translate(-50%, -50%);
+}
+
+.menu__grid--card:hover {
+  // width: 70%;
+  .wrapper {
+    display: flex;
+  }
 }
