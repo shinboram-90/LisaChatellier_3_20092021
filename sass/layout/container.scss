@@ -1,3 +1,4 @@
+$animation-slide-left: transform 350ms ease-in-out;
 .container {
   margin-top: -60px;
   border-top-left-radius: 30px;
@@ -25,27 +26,24 @@
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 10px;
     overflow: hidden;
-    & p {
-      white-space: nowrap;
-      text-overflow: ellipsis;
+    display: flex;
+    justify-content: space-between;
+    &--content {
       overflow: hidden;
       padding-right: 1rem;
+      & h6,
+      p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
     }
-    & > p {
-      font-weight: 500;
-      font-size: 1.15rem;
-    }
-    &--description {
+    &--price {
       display: flex;
-      justify-content: space-between;
-      line-height: 1.3rem;
-      & > p {
-        font-size: 0.95rem;
-      }
-      & span {
-        font-weight: bold;
-        font-size: 0.95rem;
-      }
+      align-self: flex-end;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: $animation-slide-left;
     }
   }
 }
@@ -68,7 +66,7 @@
   border-bottom-right-radius: 15px;
   font-size: 1.35rem;
   // transform: translate(-50%, -50%);
-  transition: transform 350ms ease-in-out;
+  transition: $animation-slide-left;
   & > i {
     transition: transform 400ms ease-in-out;
     font-size: 1.6rem;
@@ -82,5 +80,11 @@
     & > i {
       transform: rotate(1turn);
     }
+  }
+  .menu__grid--card--price {
+    transform: translateX(-4.5rem);
+  }
+  .menu__grid--card--content {
+    width: calc(100% - 35%);
   }
 }
