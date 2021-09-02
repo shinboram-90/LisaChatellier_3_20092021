@@ -60,8 +60,13 @@ h5 {
   font-weight: 300;
 }
 
+h6 {
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .btn {
@@ -315,28 +320,25 @@ p {
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 10px;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
-.menu__grid--card p {
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.menu__grid--card--content {
   overflow: hidden;
   padding-right: 1rem;
 }
-.menu__grid--card > p {
-  font-weight: 500;
-  font-size: 1.15rem;
+.menu__grid--card--content h6,
+.menu__grid--card--content p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu__grid--card--description {
+.menu__grid--card--price {
   display: flex;
-  justify-content: space-between;
-  line-height: 1.3rem;
-}
-.menu__grid--card--description > p {
-  font-size: 0.95rem;
-}
-.menu__grid--card--description span {
-  font-weight: bold;
-  font-size: 0.95rem;
+  align-self: flex-end;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: transform 350ms ease-in-out;
 }
 
 .wrapper {
@@ -368,6 +370,12 @@ p {
 }
 .menu__grid--card:hover .wrapper > i {
   transform: rotate(1turn);
+}
+.menu__grid--card:hover .menu__grid--card--price {
+  transform: translateX(-4.5rem);
+}
+.menu__grid--card:hover .menu__grid--card--content {
+  width: calc(100% - 35%);
 }
 
 footer {
