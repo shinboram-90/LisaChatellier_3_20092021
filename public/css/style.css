@@ -314,6 +314,7 @@ p {
   padding: 0.6rem 1.5rem 0.7rem 1rem;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 10px;
+  overflow: hidden;
 }
 .menu__grid--card p {
   white-space: nowrap;
@@ -339,24 +340,34 @@ p {
 }
 
 .wrapper {
+  display: flex;
+  z-index: 1;
+  opacity: 0;
   justify-content: center;
   align-items: center;
   position: absolute;
   background-color: #99e2d0;
   color: #fff;
-  display: none;
-  height: 100.5%;
-  top: 50%;
-  right: -30.5px;
-  width: 3.8rem;
+  height: 100%;
+  top: 0;
+  right: -4.5rem;
+  width: 4.5rem;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 1.35rem;
-  transform: translate(-50%, -50%);
+  transition: transform 350ms ease-in-out;
+}
+.wrapper > i {
+  transition: transform 400ms ease-in-out;
+  font-size: 1.6rem;
 }
 
 .menu__grid--card:hover .wrapper {
-  display: flex;
+  opacity: 1;
+  transform: translateX(-4.5rem);
+}
+.menu__grid--card:hover .wrapper > i {
+  transform: rotate(1turn);
 }
 
 footer {
