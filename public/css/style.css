@@ -47,6 +47,7 @@ h3 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
   font-size: 1.7rem;
+  padding-bottom: 1.4rem;
 }
 
 h4 {
@@ -55,14 +56,13 @@ h4 {
 }
 
 h5 {
-  padding-top: 1.6rem;
   font-size: 1rem;
   font-weight: 300;
 }
 
 h6 {
   font-weight: 500;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 p {
@@ -146,7 +146,22 @@ p {
   height: 275px;
   background-size: cover;
   background-position: center;
+}
+
+.palette {
   background-image: url("../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.francaise {
+  background-image: url("../../public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.delice {
+  background-image: url("../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.note {
+  background-image: url("../../public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 .procedure {
@@ -157,6 +172,16 @@ p {
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
+}
+@media (min-width: 992px) {
+  .procedure__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .procedure__box--card {
+    min-width: 18rem;
+  }
 }
 .procedure__box--card {
   background-color: #f6f6f6;
@@ -264,7 +289,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 1.7rem;
 }
 .restaurant__grid--card--content .heart-animation {
   width: 1.5rem;
@@ -292,17 +316,49 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+@media (min-width: 992px) {
+  .restaurant__grid {
+    display: grid;
+    grid-template-areas: "card-1 card2" "card-3 card-4";
+    justify-content: space-evenly;
+    row-gap: 3rem;
+  }
+  .restaurant__grid--card {
+    min-width: 28rem;
+  }
+  .restaurant__grid .card-1 {
+    grid-area: card-1;
+  }
+  .restaurant__grid .card-2 {
+    grid-area: card-2;
+  }
+  .restaurant__grid .card-3 {
+    grid-area: card-3;
+  }
+  .restaurant__grid .card-4 {
+    grid-area: card-4;
+  }
+}
 .container {
   margin-top: -60px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  padding: 2rem 1rem 4.2rem 1rem;
+  padding: 1.7rem 1rem 4.2rem 1rem;
   background-color: #f6f6f6;
 }
 .container__title {
   padding-right: 1rem;
 }
 
+@media all and (min-width: 1225px) and (max-width: 1920px) {
+  .section-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-container > section {
+    margin: 1rem;
+  }
+}
 .underline {
   background: #99e2d0;
   height: 3px;
@@ -326,12 +382,16 @@ p {
 .menu__grid--card--content {
   overflow: hidden;
   padding-right: 1rem;
+  line-height: 1.6rem;
 }
 .menu__grid--card--content h6,
 .menu__grid--card--content p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.menu__grid--card--content .h6-2lines {
+  line-height: 1.3rem;
 }
 .menu__grid--card--price {
   display: flex;
@@ -375,7 +435,7 @@ p {
   transform: translateX(-4.5rem);
 }
 .menu__grid--card:hover .menu__grid--card--content {
-  width: calc(100% - 35%);
+  width: calc(100% - 34%);
 }
 
 footer {

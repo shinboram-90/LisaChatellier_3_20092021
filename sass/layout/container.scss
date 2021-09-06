@@ -1,4 +1,3 @@
-$animation-slide-left: transform 350ms ease-in-out;
 .container {
   margin-top: -60px;
   border-top-left-radius: 30px;
@@ -7,6 +6,16 @@ $animation-slide-left: transform 350ms ease-in-out;
   background-color: #f6f6f6;
   &__title {
     padding-right: 1rem;
+  }
+}
+
+@media all and (min-width: 1225px) and (max-width: 1920px) {
+  .section-container {
+    display: flex;
+    justify-content: space-between;
+    > section {
+      margin: 1rem;
+    }
   }
 }
 
@@ -31,11 +40,15 @@ $animation-slide-left: transform 350ms ease-in-out;
     &--content {
       overflow: hidden;
       padding-right: 1rem;
+      line-height: 1.6rem;
       & h6,
       p {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+      }
+      .h6-2lines {
+        line-height: 1.3rem;
       }
     }
     &--price {
@@ -85,6 +98,6 @@ $animation-slide-left: transform 350ms ease-in-out;
     transform: translateX(-4.5rem);
   }
   .menu__grid--card--content {
-    width: calc(100% - 35%);
+    width: calc(100% - 34%);
   }
 }
