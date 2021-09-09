@@ -27,6 +27,7 @@
       box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 15px;
       &:hover {
         background-color: $colour-pink-light;
+        transition: all 0.3s ease-in-out;
 
         .procedure__box--card-icon {
           color: $colour-primary;
@@ -47,6 +48,7 @@
   transform: translate(-50%, -50%);
   color: #7e7e7e;
   font-size: 1.3rem;
+  line-height: 1.7rem;
 }
 
 .rounded-number {

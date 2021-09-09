@@ -87,14 +87,35 @@
 
       &:hover {
         // background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-        // background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+        background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
         // -moz-background-clip: text;
+
         background: linear-gradient($colour-primary, $colour-secondary);
         -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        animation: progres 0.7s ease-in-out;
+        cursor: pointer;
+        // background-clip: text;
+        // -webkit-text-fill-color: transparent;
       }
     }
+  }
+}
+
+@keyframes progres {
+  0% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -107,20 +128,20 @@
     justify-content: space-evenly;
     row-gap: 3rem;
 
-    &--card {
-      min-width: 28rem;
-    }
-    .card-1 {
-      grid-area: card-1;
-    }
-    .card-2 {
-      grid-area: card-2;
-    }
-    .card-3 {
-      grid-area: card-3;
-    }
-    .card-4 {
-      grid-area: card-4;
-    }
+    // &--card {
+    //   min-width: 28rem;
+    // }
+    // .card-1 {
+    //   grid-area: card-1;
+    // }
+    // .card-2 {
+    //   grid-area: card-2;
+    // }
+    // .card-3 {
+    //   grid-area: card-3;
+    // }
+    // .card-4 {
+    //   grid-area: card-4;
+    // }
   }
 }
