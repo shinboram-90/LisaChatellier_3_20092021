@@ -7,17 +7,16 @@
   justify-content: center;
   align-items: center;
   z-index: 99;
-  background-color: transparent;
   animation: hiding 3.8s linear forwards;
 }
 
 @keyframes hiding {
   0%,
   80% {
-    background: rgba(0, 0, 0, 92%);
+    background: rgba(255, 255, 255, 90%);
   }
   95% {
-    background: rgba(0, 0, 0, 30%);
+    background: rgba(255, 255, 255, 50%);
   }
   100% {
     display: none;
@@ -37,25 +36,24 @@
   background-image: url("../../public/img/logo/Vector.png");
   // -moz-background-clip: text;
   // -o-background-clip: text;
+  // background-clip: text;
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
 
-  animation: wave-animation 7s linear forwards, loading-animation 7s linear,
-    texthiding 3.6s linear;
-
-  background-size: 200px 100px;
+  animation: wave-animation 7s linear, loading-animation 7s linear,
+    text-hiding 3.6s linear;
+  // background-size: 200px 100px;
   background-repeat: repeat-x;
-  opacity: 0;
+  // opacity: 0;
   animation-fill-mode: forwards;
 }
 
-@keyframes texthiding {
+@keyframes text-hiding {
   0%,
   95% {
     opacity: 1;
   }
-
+  96%,
   100% {
     opacity: 0;
   }
