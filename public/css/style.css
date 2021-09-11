@@ -445,6 +445,55 @@ p {
   width: calc(100% - 34%);
 }
 
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.menu__grid--card:nth-child(1) {
+  -webkit-animation: slideInUp, smooth-opacity;
+  animation: slideInUp, smooth-opacity;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.menu__grid--card:nth-child(2) {
+  -webkit-animation: slideInUp, smooth-opacity;
+  animation: slideInUp, smooth-opacity;
+  animation-duration: 2.5s;
+}
+
+.menu__grid--card:nth-child(3) {
+  -webkit-animation: slideInUp, smooth-opacity;
+  animation: slideInUp, smooth-opacity;
+  animation-duration: 3s;
+}
+
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes smooth-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .loader {
   position: fixed;
   width: 100%;
