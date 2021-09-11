@@ -2,6 +2,9 @@ footer {
   background-color: $colour-dark;
   color: $colour-white;
   padding: 1.9rem 2rem;
+  @media (min-width: 600px) {
+    padding: $padding-section-m;
+  }
 
   .link {
     text-decoration: none;

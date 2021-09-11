@@ -2,16 +2,24 @@
   background: $colour-white;
   padding: $padding-section;
 
+  @media (min-width: 600px) {
+    padding: $padding-section-m;
+  }
+
   &__box {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 1rem 0;
     @media (min-width: 992px) {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+
+      column-gap: 2rem;
+      flex-wrap: wrap;
       &--card {
-        min-width: 18rem;
+        min-width: 10rem;
+        flex-grow: 1;
       }
     }
 
