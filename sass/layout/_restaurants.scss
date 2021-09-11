@@ -115,35 +115,17 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 600px) {
   .restaurant__grid {
-    flex-direction: row;
-    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 3rem;
+  }
+}
 
-    // grid-template-areas:
-    //   "card-1 card2"
-    //   "card-3 card-4";
-    justify-content: space-between;
-
-    column-gap: 2rem;
-    flex-wrap: wrap;
-
-    &--card {
-      // flex-grow: 1;
-      min-width: 20rem;
-      //   min-width: 28rem;
-      // }
-      // .card-1 {
-      //   grid-area: card-1;
-      // }
-      // .card-2 {
-      //   grid-area: card-2;
-      // }
-      // .card-3 {
-      //   grid-area: card-3;
-      // }
-      // .card-4 {
-      //   grid-area: card-4;
-    }
+@media (min-width: 1280px) {
+  .restaurant__grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
