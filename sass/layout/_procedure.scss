@@ -14,11 +14,9 @@
     @media (min-width: 992px) {
       display: flex;
       flex-direction: row;
-
       column-gap: 2rem;
       flex-wrap: wrap;
       &--card {
-        min-width: 10rem;
         flex-grow: 1;
       }
     }
@@ -49,11 +47,13 @@
   }
 }
 
+.small-grid {
+  display: inline-grid;
+  grid-template-columns: 2.2rem 11.5rem 2.2rem;
+  align-items: center;
+}
+
 .procedure__box--card-icon {
-  position: absolute;
-  left: 2.5rem;
-  top: 50%;
-  transform: translate(-50%, -50%);
   color: #7e7e7e;
   font-size: 1.3rem;
   line-height: 1.7rem;
