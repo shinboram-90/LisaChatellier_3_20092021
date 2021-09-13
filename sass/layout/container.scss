@@ -7,9 +7,12 @@
   &__title {
     padding-right: 1rem;
   }
+  @media (min-width: 600px) {
+    padding: $padding-section-m;
+  }
 }
 
-@media all and (min-width: 1225px) and (max-width: 1920px) {
+@media all and (min-width: 1340px) {
   .section-container {
     display: flex;
     justify-content: space-between;
@@ -41,6 +44,7 @@
       overflow: hidden;
       padding-right: 1rem;
       line-height: 1.6rem;
+      transition: transform 1s ease-in-out;
       & h6,
       p {
         white-space: nowrap;
@@ -100,6 +104,8 @@
   }
 }
 
+// ----------- WHOLE MENU SLIDING UP
+
 @-webkit-keyframes slideInUp {
   0% {
     -webkit-transform: translateY(100%);
@@ -112,23 +118,65 @@
   }
 }
 
-.menu__grid--card:nth-child(1) {
+.menu__grid--card {
   -webkit-animation: slideInUp, smooth-opacity;
   animation: slideInUp, smooth-opacity;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-.menu__grid--card:nth-child(2) {
-  -webkit-animation: slideInUp, smooth-opacity;
-  animation: slideInUp, smooth-opacity;
-  animation-duration: 2.5s;
+// .menu__grid--card:nth-child(2) {
+//   -webkit-animation: slideInUp, smooth-opacity;
+//   animation: slideInUp, smooth-opacity;
+//   animation-duration: 2.5s;
+// }
+
+// .menu__grid--card:nth-child(3) {
+//   -webkit-animation: slideInUp, smooth-opacity;
+//   animation: slideInUp, smooth-opacity;
+//   animation-duration: 3s;
+// }
+
+.animation-1 {
+  animation-delay: 0.43s;
 }
 
-.menu__grid--card:nth-child(3) {
-  -webkit-animation: slideInUp, smooth-opacity;
-  animation: slideInUp, smooth-opacity;
-  animation-duration: 3s;
+.animation-2 {
+  animation-delay: 0.68s;
+}
+
+.animation-3 {
+  animation-delay: 0.93s;
+}
+
+.animation-4 {
+  animation-delay: 1s;
+}
+
+.animation-5 {
+  animation-delay: 1.43s;
+}
+
+.animation-6 {
+  animation-delay: 1.68s;
+}
+
+.animation-7 {
+  animation-delay: 1.93s;
+}
+
+.animation-8 {
+  animation-delay: 2s;
+}
+
+.animation-9 {
+  animation-delay: 2.43s;
+}
+
+.animation-10 {
+  animation-delay: 2.68s;
 }
 
 @keyframes slideInUp {
@@ -143,28 +191,6 @@
   }
 }
 
-// @keyframes smooth-opacity {
-//   0% {
-//     display: none;
-//     opacity: 0;
-//   }
-//   25% {
-//     display: block;
-//     opacity: 0.3;
-//   }
-//   50% {
-//     display: block;
-//     opacity: 0.6;
-//   }
-//   75% {
-//     display: block;
-//     opacity: 0.8;
-//   }
-//   100% {
-//     display: block;
-//     opacity: 1;
-//   }
-// }
 @keyframes smooth-opacity {
   0% {
     opacity: 0;

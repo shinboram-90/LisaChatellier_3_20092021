@@ -51,6 +51,9 @@
   display: inline-grid;
   grid-template-columns: 2.2rem 11.5rem 2.2rem;
   align-items: center;
+  & > span {
+    display: contents;
+  }
 }
 
 .procedure__box--card-icon {

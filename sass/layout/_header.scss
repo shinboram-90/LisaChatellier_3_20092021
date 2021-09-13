@@ -11,6 +11,9 @@
       left: 2rem;
       transform: translate(-50%, -50%);
       font-size: 1.2rem;
+      @media all and (min-width: 600px) {
+        left: 4.5rem;
+      }
     }
   }
   &__location {
@@ -45,6 +48,12 @@
   height: 275px;
   background-size: cover;
   background-position: center;
+  @media all and (min-width: 600px) {
+    height: 375px;
+  }
+  @media all and (min-width: 1340px) {
+    height: 475px;
+  }
 }
 
 .palette {
