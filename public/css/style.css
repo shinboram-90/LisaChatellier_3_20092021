@@ -110,6 +110,11 @@ p {
   transform: translate(-50%, -50%);
   font-size: 1.2rem;
 }
+@media all and (min-width: 600px) {
+  .header__nav--arrow {
+    left: 4.5rem;
+  }
+}
 .header__location {
   padding: 0.8rem;
   color: #464646;
@@ -141,6 +146,16 @@ p {
   height: 275px;
   background-size: cover;
   background-position: center;
+}
+@media all and (min-width: 600px) {
+  .background-img {
+    height: 375px;
+  }
+}
+@media all and (min-width: 1340px) {
+  .background-img {
+    height: 475px;
+  }
 }
 
 .palette {
@@ -212,6 +227,9 @@ p {
   display: inline-grid;
   grid-template-columns: 2.2rem 11.5rem 2.2rem;
   align-items: center;
+}
+.small-grid > span {
+  display: contents;
 }
 
 .procedure__box--card-icon {
@@ -358,8 +376,13 @@ p {
 .container__title {
   padding-right: 1rem;
 }
+@media (min-width: 600px) {
+  .container {
+    padding: 3rem 4.5rem 3.5rem 4.5rem;
+  }
+}
 
-@media all and (min-width: 1225px) and (max-width: 1920px) {
+@media all and (min-width: 1340px) {
   .section-container {
     display: flex;
     justify-content: space-between;
@@ -392,6 +415,7 @@ p {
   overflow: hidden;
   padding-right: 1rem;
   line-height: 1.6rem;
+  transition: transform 1s ease-in-out;
 }
 .menu__grid--card--content h6,
 .menu__grid--card--content p {

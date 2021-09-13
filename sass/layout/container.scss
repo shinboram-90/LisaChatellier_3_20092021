@@ -7,9 +7,12 @@
   &__title {
     padding-right: 1rem;
   }
+  @media (min-width: 600px) {
+    padding: $padding-section-m;
+  }
 }
 
-@media all and (min-width: 1225px) and (max-width: 1920px) {
+@media all and (min-width: 1340px) {
   .section-container {
     display: flex;
     justify-content: space-between;
@@ -41,6 +44,7 @@
       overflow: hidden;
       padding-right: 1rem;
       line-height: 1.6rem;
+      transition: transform 1s ease-in-out;
       & h6,
       p {
         white-space: nowrap;
@@ -99,6 +103,8 @@
     width: calc(100% - 34%);
   }
 }
+
+// ----------- WHOLE MENU SLIDING UP
 
 @-webkit-keyframes slideInUp {
   0% {
@@ -185,28 +191,6 @@
   }
 }
 
-// @keyframes smooth-opacity {
-//   0% {
-//     display: none;
-//     opacity: 0;
-//   }
-//   25% {
-//     display: block;
-//     opacity: 0.3;
-//   }
-//   50% {
-//     display: block;
-//     opacity: 0.6;
-//   }
-//   75% {
-//     display: block;
-//     opacity: 0.8;
-//   }
-//   100% {
-//     display: block;
-//     opacity: 1;
-//   }
-// }
 @keyframes smooth-opacity {
   0% {
     opacity: 0;
