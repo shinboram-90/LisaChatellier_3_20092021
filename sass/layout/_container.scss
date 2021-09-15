@@ -12,6 +12,13 @@
   }
 }
 
+.section-container {
+  column-gap: 2rem;
+  > section {
+    flex-grow: 1;
+  }
+}
+
 @media all and (min-width: 1340px) {
   .section-container {
     display: flex;
