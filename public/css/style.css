@@ -554,7 +554,8 @@ footer .footer__title {
   margin-right: -1.5rem;
 }
 .menu__grid--card:hover .wrapper > i {
-  transform: rotate(1turn);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 @-webkit-keyframes slideInUp {

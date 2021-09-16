@@ -86,7 +86,8 @@
   .wrapper {
     margin-right: -1.5rem;
     & > i {
-      transform: rotate(1turn);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
   }
 }
