@@ -5,7 +5,7 @@
   padding: $padding-container;
   background-color: #f6f6f6;
   &__title {
-    padding-right: 1rem;
+    padding: 0 1rem 1.4rem 0;
   }
   @media (min-width: 600px) {
     padding: $padding-section-m;
